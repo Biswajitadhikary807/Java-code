@@ -1,0 +1,33 @@
+package  Polymorphism;
+public class Main {
+  public static void main(String [] a){
+Shape c=new Circle();
+    Shape s=new Shape();
+    c.area();
+    s.area();
+  Shape t=new Triangle(); 
+    t.area();
+  }
+}
+class Shape  {
+  void area(){
+    System.out.println("I am a object from Shape class");
+}
+}
+class Circle extends Shape {
+  @Override
+   void area(){
+      System.out.println("I am a object from circle class");
+}
+}
+class Square extends Shape {
+  void area(){
+      System.out.println("I am a object from square class");
+         }
+}
+class Triangle extends Shape{
+  void area(){
+      System.out.println("I am a object from Triangle  class"); 
+}
+}
+
